@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Liberation Mono:size=16:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -94,7 +94,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.8, alphaUnfocused = 0.6;
+float alpha = 0.95, alphaUnfocused = 0.9;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -134,7 +134,7 @@ static unsigned int defaultcs = 257;
 static unsigned int defaultrcs = 256;
 
 // manually added for focus patch for alpha
-unsigned int bg = 256, bgUnfocused = 0;
+unsigned int bg = 256, bgUnfocused = 256;
 
 /*
  * Default shape of cursor
